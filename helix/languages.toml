@@ -1,0 +1,30 @@
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports"}
+
+[[language]]
+name = "markdown"
+formatter = { command = 'prettier', args = ["--parser", "markdown"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name="rust"
+auto-format=true
+
+[language-server.rust-analyzer]
+command="rust-analyzer"
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[[language]]
+name = "python"
+scope = "source.python"
+language-server = { command = "pylsp" }
+config = { "plugins" = { "rope_autoimport" = { "enabled" = true }} }
