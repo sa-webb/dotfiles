@@ -1,0 +1,34 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "shift+cmd+m",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "cmd+k z",
+        "command": "-workbench.action.toggleZenMode"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "workbench.action.toggleMaximizedPanel",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "hx ${file}"
+        }
+    },
+    {
+        "key": "cmd+u",
+        "command": "workbench.action.terminal.killActiveTab",
+        "when": "terminalFocus && terminalProcessSupported"
+    }
+      
+]
