@@ -1,0 +1,106 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.folders.color": "#f54284",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.inheritEnv": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#da62ec",
+    "terminalCursor.foreground": "#6e26e2"
+  },
+  "editor.tokenColorCustomizations": {
+    "[Bluloco Dark]": {
+      "textMateRules": [
+        {
+          "scope": "string.quoted",
+          "settings": {
+            "foreground": "#a87fea"
+          }
+        }
+      ]
+    }
+  },
+  "material-icon-theme.folders.associations": {
+    ".ruff_cache": "base",
+    "beam": "pipe",
+    "fleet": "cluster",
+    "flows": "azure-pipelines",
+    "inputs": "download",
+    "kafka": "batch",
+    "loaders": "archive",
+    "modules": "app",
+    "react": "React-components",
+    "spark": "delta",
+    "subgraphs": "graphql",
+    "types": "TypeScript",
+    "urql": "apollo",
+    "validators": "tasks",
+    "worker": "tools",
+    "workflow-scripts": "kubernetes"
+  },
+  "telemetry.telemetryLevel": "off",
+  "material-icon-theme.files.associations": {
+    "context.tsx": "Redux-store"
+  },
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook",
+    "*.xls": "default"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "editor.inlineSuggest.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true,
+    "rust": true,
+    "python": true,
+    "properties": false,
+    "typescriptreact": true,
+    "typescript": true
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.largeFileOptimizations": false,
+  "terminal.external.osxExec": "Warp.app",
+  "python.defaultInterpreterPath": "/Users/austin/miniconda3/envs/de/bin/python",
+  "window.zoomLevel": 2,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "yaml.validate": false,
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "extensions.ignoreRecommendations": true,
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

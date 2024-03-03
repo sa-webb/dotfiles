@@ -1,34 +1,48 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
-    {
-        "key": "shift+cmd+m",
-        "command": "workbench.action.toggleZenMode"
+  {
+    "key": "shift+cmd+m",
+    "command": "workbench.action.toggleZenMode"
+  },
+  {
+    "key": "cmd+k z",
+    "command": "-workbench.action.toggleZenMode"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+l",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+h",
+    "command": "workbench.action.terminal.sendSequence",
+    "args": {
+      "text": "hx ${file}"
     },
-    {
-        "key": "cmd+k z",
-        "command": "-workbench.action.toggleZenMode"
-    },
-    {
-        "key": "cmd+enter",
-        "command": "workbench.action.toggleMaximizedPanel",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "cmd+l",
-        "command": "workbench.action.terminal.focusPreviousPane",
-        "when": "terminalFocus && terminalProcessSupported"
-    },
-    {
-        "key": "cmd+h",
-        "command": "workbench.action.terminal.sendSequence",
-        "args": {
-            "text": "hx ${file}"
-        }
-    },
-    {
-        "key": "cmd+u",
-        "command": "workbench.action.terminal.killActiveTab",
-        "when": "terminalFocus && terminalProcessSupported"
-    }
-      
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+y",
+    "command": "go-to-next-error.nextInFiles.warning",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+shift+y",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+u",
+    "command": "workbench.action.terminal.killActiveTab",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+d",
+    "command": "editor.action.goToDeclaration"
+  }
 ]
