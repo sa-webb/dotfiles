@@ -6,6 +6,10 @@ local config = wezterm.config_builder()
 
 config.keys = {
   {
+    key = 'F10',
+    action = wezterm.action.DisableDefaultAssignment,
+  },
+  {
     key = ']',
     mods = 'ALT',
     action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
