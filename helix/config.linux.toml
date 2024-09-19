@@ -2,7 +2,11 @@ theme = "tokyonight"
 
 [editor]
 bufferline = "always"
-auto-format = true
+cursorline = true
+color-modes = true
+
+[keys.normal]
+A-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
 
 [editor.cursor-shape]
 insert = "bar"
@@ -11,3 +15,6 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
+
+[editor.indent-guides]
+render = true
