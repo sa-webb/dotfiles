@@ -1,4 +1,32 @@
 [[language]]
+name="rust"
+auto-format = true
+
+roots = [
+  "Cargo.toml",
+  "Cargo.lock"
+]
+
+[language.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+
+[[language]]
 name = "go"
 auto-format = true
 formatter = { command = "goimports"}
@@ -14,31 +42,24 @@ formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 auto-format = true
 
 [[language]]
-name="rust"
-auto-format=true
-
-[language-server.rust-analyzer]
-command="rust-analyzer"
-
-[language-server.rust-analyzer.config.check]
-command = "clippy"
-
-[[language]]
 name = "python"
-language-servers = [ "pyright", "ruff" ]
+language-servers = ["pyright", "ruff"]
+auto-format = true
+roots = ["pyproject.toml"]
 
 [language-server.pyright.config.python.analysis]
 typeCheckingMode = "basic"
 
 [language-server.ruff]
-command = "ruff-lsp"
+command = "ruff"
+args = ["server"]
 
 [language-server.ruff.config.settings]
 args = ["--ignore", "E501"]
 
-[language.formatter]
-command = "black"
-args = ["--line-length", "88", "--quiet", "-"]
+# [language.formatter]
+# command = "ruff"
+# args = ["format", "--line-length", "120"]
 
 [[language]]
 name = "hcl"
