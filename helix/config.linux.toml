@@ -1,12 +1,23 @@
-theme = "tokyonight"
+theme = "ataraxia"
 
 [editor]
+end-of-line-diagnostics = "hint"
 bufferline = "always"
 cursorline = true
 color-modes = true
 
 [keys.normal]
+y = ":primary-clipboard-yank"
+p = ":primary-clipboard-paste-replace"
 A-g = [":new", ":insert-output lazygit", ":buffer-close!", ":redraw"]
+A-y = [
+  ":sh rm -f /tmp/hx-yazi-choice",
+  ":insert-output yazi \"%{buffer_name}\" --chooser-file=/tmp/hx-yazi-choice",
+  ":sh printf \"\\x1b[?1049h\\x1b[?2004h\" > /dev/tty",
+  ":open %sh{cat /tmp/hx-yazi-choice}",
+  ":redraw",
+]
+A-m = '@:sh glow -w 100 "%{buffer_name}"<ret>'
 
 [editor.cursor-shape]
 insert = "bar"
@@ -14,7 +25,7 @@ normal = "block"
 select = "underline"
 
 [editor.file-picker]
-hidden = false
+hidden = true
 
 [editor.indent-guides]
-render = true
+render = false
